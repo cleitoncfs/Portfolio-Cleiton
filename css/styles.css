@@ -122,7 +122,14 @@
   margin-bottom: 10px;
 }
 
-#btn-projects {
+#button-container {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os botões */
+  justify-content: flex-start; /* Alinha os botões à esquerda */
+  margin-bottom: 20px; /* Espaço entre os botões e a próxima section */
+}
+
+#btn-projects, #btn-certificates {
   font-weight: bold;
   font-size: 16px;
   color: var(--main-text-color);
@@ -131,7 +138,6 @@
   border-radius: 5px;
   text-decoration: none;
   transition: .3s;
-  margin: 25px 0;
   padding: 12px 10px;
   width: 150px;
   text-align: center;
@@ -140,12 +146,12 @@
   justify-content: center;
 }
 
-#btn-projects ion-icon {
+#btn-projects ion-icon, #btn-certificates ion-icon {
   font-size: 20px;
   margin-right: 5px;
 }
 
-#btn-projects:hover {
+#btn-projects:hover, #btn-certificates:hover {
   background-color: transparent;
   border-color: var(--main-color);
   color: var(--main-color);
