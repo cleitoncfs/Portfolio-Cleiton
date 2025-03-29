@@ -78,8 +78,15 @@
 }
 
 #social-container li a {
+    display: inline-block;
     color: var(--main-color);
     font-size: 30px;
+}
+
+#social-container li a:hover {
+    transform: scale(1.1); /* Zoom mais sutil (1.1 → 1.05) */
+    transition: transform 0.3s ease; /* Tempo mais rápido (0.3s → 0.2s) */
+    filter: brightness(1.2); /* Aumenta um pouco o brilho */
 }
 
 #email-container {
@@ -87,7 +94,7 @@
     justify-content: center;
 }
 
-#email-container ion-icon,
+#email-container i,
 #email-container a {
     flex: 1 1 0;
 }
@@ -98,7 +105,7 @@
     max-width: 225px;
 }
 
-#email-container ion-icon {
+#email-container i {
     color: var(--main-color);
     font-size: 20px;
     margin-right: 5px;
